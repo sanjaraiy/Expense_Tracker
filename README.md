@@ -1,8 +1,36 @@
-# React + Vite
+# Expense Tracker
+This project is built on `HTML`, `Javascript`, `TailwindCSS` and `React.js`. Here, Vite is used to create a react app.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Vite Create Link:-
+```
+npm create vite@latest
+```
+## Install Node-module Package:-
+```
+npm i
+```
+## Install TailwindCSS :-
+```
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+## Configure your template path :-
+```
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+## Add Tailwind directives to your CSS file :-
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
